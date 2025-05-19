@@ -1,5 +1,5 @@
 
-# 🧓💬 CatBot - Tech Helper for Elderly (FastAPI + Gemini)
+# 🧓💬 CatBot - Tech Helper for Elderly (FastAPI + Gemini) (Backend Api)
 
 Welcome to **CatBot**, a friendly AI assistant built with **FastAPI** and powered by **Google Gemini**. Designed to patiently assist **elderly users with tech problems**, CatBot focuses on simplicity, clarity, and user comfort — no technical jargon, no command-line magic. Just helpful answers. 🧡
 
