@@ -13,7 +13,7 @@ def generate(queary, context=None, *args, **kwargs):
         raise ValueError("API_KEY not found in .env file")
 
     client = genai.Client(api_key=api_key)
-    model = "gemini-2.5-flash-preview-04-17"
+    model = "gemini-2.5-pro"
 
     # Start with empty contents
     contents = []

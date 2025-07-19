@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini ChatGPT</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mini ChatGPT</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="chat-container">
-    <div id="chat-box" class="chat-box"></div>
-    <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
+<body class="bg-gray-100 font-sans">
+    <div class="flex h-screen antialiased text-gray-800">
+        <div class="flex flex-row h-full w-full overflow-x-hidden">
+            <!-- Main Chat Area -->
+            <div class="flex flex-col flex-auto h-full p-6">
+                <div class="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white h-full p-4 shadow-lg">
+                    <!-- Chat Header -->
+                    <div class="flex items-center justify-between pb-4 border-b-2 border-gray-200">
+                         <h1 class="text-2xl font-bold">Tech Helper</h1>
+                         <div class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 text-white font-bold">
+                            G
+                         </div>
+                    </div>
 
-  <script src="script.js"></script>
+                    <!-- Chat Box -->
+                    <div id="chat-box" class="flex flex-col h-full overflow-y-auto mb-4">
+                        <!-- Messages will be appended here -->
+                        <div class="flex items-start p-3 rounded-xl">
+                            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                AI
+                            </div>
+                            <div class="relative ml-3 text-sm bg-gray-100 py-2 px-4 shadow rounded-xl">
+                                <div>Hello! How can I help you today?</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Form -->
+                    <form id="chat-form" class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4">
+                        <div class="flex-grow">
+                            <div class="relative w-full">
+                                <input type="text" id="user-input" class="flex w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10" placeholder="Type your message..." autocomplete="off" required />
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <button type="submit" class="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-2 flex-shrink-0">
+                                <span>Send</span>
+                                <span class="ml-2">
+                                    <svg class="w-4 h-4 transform rotate-45 -mt-px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

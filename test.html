@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agnik Roy | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+        background-color: #fdfdfd;
+        color: #333;
+      }
+      .navbar {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+      }
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 1.75rem;
+        color: #343a40;
+      }
+      .hero {
+        background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+        color: #fff;
+        padding: 140px 0;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        opacity: 0.95;
+      }
+      .btn-primary {
+        background-color: #343a40;
+        border: none;
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #495057;
+        transform: translateY(-2px);
+      }
+      .section-heading {
+        margin: 80px 0 40px;
+        font-weight: 700;
+        font-size: 2.4rem;
+        text-align: center;
+        color: #343a40;
+        position: relative;
+      }
+      .section-heading::after {
+        content: '';
+        width: 60px;
+        height: 4px;
+        background: #74ebd5;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+      .project-card {
+        transition: all 0.3s ease-in-out;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      }
+      .project-card .card-body {
+        padding: 1.5rem;
+      }
+      .footer {
+        background: linear-gradient(to right, #343a40, #495057);
+        color: #dee2e6;
+        padding: 40px 0;
+        text-align: center;
+      }
+      .social-icons a {
+        color: #dee2e6;
+        margin: 0 15px;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+        text-decoration: none;
+      }
+      .social-icons a:hover {
+        color: #ffffff;
+      }
+      .img-fluid.rounded-circle {
+        border: 5px solid #fff;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      }
+      form input, form textarea {
+        border-radius: 12px;
+        padding: 0.75rem;
+        border: 1px solid #ced4da;
+      }
+      form button {
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- rest of the HTML remains the same -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Agnik Roy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Hello, I'm Agnik Roy</h1>
+        <p>Full-Stack Developer | Python & Django Enthusiast | Open-Source Contributor</p>
+        <a href="#projects" class="btn btn-primary mt-4 px-4 py-2">View Projects</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-heading">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/250" alt="Agnik Roy" class="img-fluid rounded-circle mb-3" />
+          </div>
+          <div class="col-md-8">
+            <p>I am a passionate full-stack developer with 3+ years of experience building full-fledged applications using Django, .NET, and modern JavaScript frameworks. I enjoy solving complex backend problems and designing elegant user interfaces. My enthusiasm also extends into open-source contributions and applied machine learning.</p>
+            <p>Let’s collaborate and build something impactful!</p>
+            <a href="https://github.com/Ar12agnik" class="btn btn-outline-dark me-2" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/agnik-roy-3a4434258/" class="btn btn-outline-primary" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-heading">Projects</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://github.com/Ar12agnik/Smart-Card" target="_blank">Smart Card</a></h5>
+                <p class="card-text">Secure document management using Django. Selected as EYUVA Semi-Finalist.</p>
+              </div>
+              <div class="card-footer border-0 bg-transparent">
+                <a href="https://github.com/Ar12agnik/Smart-Card" class="btn btn-sm btn-primary" target="_blank">View Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://github.com/Ar12agnik/PassVolt" target="_blank">PassVolt</a></h5>
+                <p class="card-text">A secure password manager with AES-256 encryption & Django backend.</p>
+              </div>
+              <div class="card-footer border-0 bg-transparent">
+                <a href="https://github.com/Ar12agnik/PassVolt" class="btn btn-sm btn-primary" target="_blank">View Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://github.com/Ar12agnik/Inventory-Recommendation" target="_blank">Inventory Management PoC</a></h5>
+                <p class="card-text">Machine learning-based inventory reorder recommender built using scikit-learn.</p>
+              </div>
+              <div class="card-footer border-0 bg-transparent">
+                <a href="https://github.com/Ar12agnik/Inventory-Recommendation" class="btn btn-sm btn-primary" target="_blank">View Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="https://github.com/Ar12agnik?tab=repositories" class="btn btn-secondary" target="_blank">View More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-heading">Skills</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Languages:</strong> Python, C#, Java, JavaScript, SQL</li>
+              <li class="list-group-item"><strong>Frameworks:</strong> Django, ASP.NET Core, Node.js (basic)</li>
+              <li class="list-group-item"><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, jQuery, AJAX</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Databases:</strong> MySQL, SQLite, SQL Server, MongoDB (intro)</li>
+              <li class="list-group-item"><strong>DevOps:</strong> Git, GitHub, Docker (basic), VS Code, Visual Studio</li>
+              <li class="list-group-item"><strong>Data Science:</strong> Pandas, NumPy, scikit-learn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-heading">Get In Touch</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form action="mailto:ar12agnik@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="Name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="Email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 Agnik Roy. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="https://github.com/Ar12agnik" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/agnik-roy-3a4434258/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
